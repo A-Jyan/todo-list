@@ -7,28 +7,28 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    
+
     <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
     <link rel="stylesheet" href="jqm/custom-theme.css" />
     <script src="jqm/jquery.min.js"></script>
     <script src="jqm/jquery.mobile-1.4.5.js"></script>
     <script src="./index.js"></script>
     <link rel="stylesheet" href="style.css " />
-   
   </head>
 
   <body>
     <!--Home -->
     <div data-role="page" id="home">
       <div class="menu" data-role="header">
-        <h3>Todo List</h3>
+        <h3 class="text-title">To-do List</h3>
       </div>
 
       <div role="main" class="ui-content">
-        <section class="center-vertical">
-          <a href="#add" id="add" class="small-text">Agregar item</a>
+        <section class="alineado-der">
+          <a href="#add" id="add" class="center-vertical"><button class="button-light ui-btn ui-btn-b pop">Agregar tarea</button></a>
         </section>
         <section class="center-vertical">
+        
           <div id="todos"></div>
         </section>
       </div>
@@ -45,25 +45,31 @@
       </div>
     </div>
     <!-- Fin home -->
-    
 
     <!-- Agregar item -->
     <div data-role="page" id="add">
       <div class="menu" data-role="header">
-        <h3>Agregar nueva tarea</h3>
+        <h3 class="text-title">Agregar nueva tarea</h3>
       </div>
 
       <div role="main" class="ui-content">
         <section>
           <input data-id="" id="inputText" type="text" maxlength="200" />
           <div>
-            <a id="saveTodo" rel="external" href="#home"><button>Guardar</button></a>
-            <a id="updateTodo" rel="external" href="#home"><button>Actualizar</button></a>
-            <a id="cancel">Cancelar</a>
+            <a class="" id="saveTodo" rel="external" href="#home"
+              ><button class="button-light ui-btn ui-btn-b">Guardar</button></a
+            >
+            <a id="updateTodo" rel="external" href="#home"
+              ><button class="button-light ui-btn ui-btn-b">
+                Actualizar
+              </button></a
+            >
+            <a id="cancel"
+              ><button class="button-light ui-btn ui-btn-a">Cancelar</button></a
+            >
           </div>
         </section>
       </div>
-
 
       <div data-role="footer" class="center-vertical footer-style">
         <div>

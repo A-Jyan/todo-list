@@ -18,6 +18,7 @@
   font-family: "Roboto-Thin";
   src: url("./assets/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
 }
+
 .body {
   font-family: "Roboto-Regular" !important;
   font-size: 0.8rem !important;
@@ -150,6 +151,7 @@ a {
   justify-content: center !important;
   align-items: center !important;
   padding: 0.5rem 1rem;
+  background-color: #ffffff!important;
 }
 
 .svg-container {
@@ -466,9 +468,14 @@ a {
   align-items: center;
   padding: 1rem;
   margin: 1rem 0;
-  background-color: black;
+  border-bottom: 1px solid gray;
   width: 100%;
 }
+
+.todoContainer p{
+  min-width: 100px!important;
+}
+
 .edit {
   background-color: blue;
   color: white;
@@ -482,4 +489,26 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Estilos Facu */
+
+#todos{
+  text-align: center;
+  font-family: roboto-regular;
+}
+
+.btn-tarea{
+  min-height: 3em;;
+  min-width: 20%;
+  background-color: white;
+}
+
+.text-title{
+  color: #A429A0;
+}
+
+input{
+  border: 1px solid white!important;
+  height: 100px;
 }

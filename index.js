@@ -142,7 +142,7 @@ function showTodos() {
   console.log(todos);
   if (!todos) {
     return $("#todos").append(
-      "<div><p style='color:white'>No hay ningun todo!</p></div>"
+      "<div><p style='color:white'>Acá aparecerán todas las tareas que agregues. Tocá el botón Agregar tarea para añadir una nueva.</p></div>"
     );
       
   }
@@ -150,6 +150,7 @@ function showTodos() {
   $.each(todos, function (index, value) {
     $("#todos").append(
       `<div class="todoContainer">
+      <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
       <p style='color:white' clas>${value}</p>
       <div class="buttonsContainer"> <button data-value="${value}" data-id="${index}" class="edit edit ui-btn ui-shadow ui-corner-all">Editar</button><button data-value="${value}" data-id="${index}" class="delete ui-btn ui-shadow ui-corner-all">Borrar</button></div>
       </div>`
