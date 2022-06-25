@@ -469,11 +469,13 @@ a {
   background-color: black;
   width: 100%;
 }
-.buttonPersonalised {
-  background-color: white;
-  color: black;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
+.edit {
+  background-color: blue;
+  color: white;
+}
+.delete {
+  background-color: red;
+  color:white;
 }
 .buttonsContainer {
   display: flex;

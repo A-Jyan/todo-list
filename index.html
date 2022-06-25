@@ -7,13 +7,14 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="style.css " />
+    
     <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
     <link rel="stylesheet" href="jqm/custom-theme.css" />
-    <script src="./timer/timer.js"></script>
     <script src="jqm/jquery.min.js"></script>
     <script src="jqm/jquery.mobile-1.4.5.js"></script>
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css " />
+   
   </head>
 
   <body>
@@ -25,7 +26,7 @@
 
       <div role="main" class="ui-content">
         <section class="center-vertical">
-          <a href="#add" class="small-text">Agregar item</a>
+          <a href="#add" id="add" class="small-text">Agregar item</a>
         </section>
         <section class="center-vertical">
           <div id="todos"></div>
@@ -44,25 +45,25 @@
       </div>
     </div>
     <!-- Fin home -->
+    
 
     <!-- Agregar item -->
     <div data-role="page" id="add">
       <div class="menu" data-role="header">
-        <div style="max-width: 30%">
-          <a href="#home" class="small-text">Back</a>
-        </div>
         <h3>Agregar nueva tarea</h3>
       </div>
 
       <div role="main" class="ui-content">
         <section>
-          <input id="inputText" type="text" maxlength="200" />
+          <input data-id="" id="inputText" type="text" maxlength="200" />
           <div>
-            <a id="saveTodo"><button>Guardar</button></a>
+            <a id="saveTodo" rel="external" href="#home"><button>Guardar</button></a>
+            <a id="updateTodo" rel="external" href="#home"><button>Actualizar</button></a>
             <a id="cancel">Cancelar</a>
           </div>
         </section>
       </div>
+
 
       <div data-role="footer" class="center-vertical footer-style">
         <div>
@@ -75,7 +76,5 @@
         </div>
       </div>
     </div>
-
-    <script src="jqm/carrousel.js"></script>
   </body>
 </html>
