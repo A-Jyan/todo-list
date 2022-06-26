@@ -10,10 +10,10 @@
 
     <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
     <link rel="stylesheet" href="jqm/custom-theme.css" />
+    <link rel="stylesheet" href="style.css " />
     <script src="jqm/jquery.min.js"></script>
     <script src="jqm/jquery.mobile-1.4.5.js"></script>
     <script src="./index.js"></script>
-    <link rel="stylesheet" href="style.css " />
   </head>
 
   <body>
@@ -23,12 +23,15 @@
         <h3 class="text-title">To-do List</h3>
       </div>
 
-      <div role="main" class="ui-content">
-        <section class="alineado-der">
-          <a href="#add" id="add" class="center-vertical"><button class="button-light ui-btn ui-btn-b pop">Agregar tarea</button></a>
+      <div role="main" class="ui-content main">
+        <section>
+          <a href="#add" id="add" class="center-vertical"
+            ><button class="button-light ui-btn ui-btn-b pop">
+              Agregar tarea
+            </button></a
+          >
         </section>
         <section class="center-vertical">
-        
           <div id="todos"></div>
         </section>
       </div>
@@ -52,9 +55,20 @@
         <h3 class="text-title">Agregar nueva tarea</h3>
       </div>
 
-      <div role="main" class="ui-content">
+      <div role="main" class="ui-content main">
         <section>
-          <input data-id="" id="inputText" type="text" maxlength="200" />
+          <div class="inputContainer">
+            <textarea
+              class="inputText"
+              data-id=""
+              id="inputText"
+              name="textarea"
+              rows="1"
+              cols="1"
+              maxlength="60"
+              placeholder="Tarea a realizar"
+            ></textarea>
+          </div>
           <div>
             <a class="" id="saveTodo" rel="external" href="#home"
               ><button class="button-light ui-btn ui-btn-b">Guardar</button></a
